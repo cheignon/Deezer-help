@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+
 enum Order{
     
     case RANKING
@@ -115,6 +116,7 @@ class Client: NSObject {
                 
             }
         }
+        
         request += Output
         
         
