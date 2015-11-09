@@ -14,7 +14,16 @@ class ViewController: UIViewController,DeezerWebViewAuthControllerDelegate {
     @IBOutlet weak var connectButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        Manager.sharedManager.initialize(clientID: 	"167085", clientSecret: "6ed68e8cd0e00c03ea9aa1cfc7ace6ea", redirectURL: "http://framework.com")
+        
+        
+//        0) Go to Deezer developers website: http://developers.deezer.com
+//        1) Login with your standard Deezer account, and go to My App.
+//        2) Create an application id for your project by clicking on "Create a new application" button
+//        3) Fill in the app creation form and validate. You can edit your application later to add additional informations.
+//        WARNING : redirect url must to be with this format : - http://wwww.domain.com
+//                                                             - http://domain.com
+//                                                             - http://localhost
+        Manager.sharedManager.initialize(clientID: 	"YOUR APP ID", clientSecret: "YOUR SECRET CLIENT", redirectURL: "YOUR REDIRECT URL")
 
        
         // Do any additional setup after loading the view, typically from a nib.
